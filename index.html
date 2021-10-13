@@ -126,6 +126,7 @@
                 },
                 set: function (newValue) {
                     console.log('set');
+                    console.log(value);
                     value = newValue;
                     queue.forEach(fn => fn());
                 }
